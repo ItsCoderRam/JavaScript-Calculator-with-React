@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+box-sizing:border-box;
+} 
+
+body {
+  background-color:#7f8fa6;
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.calculator{
+  background-color:#1B1464;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.8);
+  display: flex;
+  flex-wrap:wrap;
+/*   align-items: center; */
+/*   justify-content: center; */
+  padding:5px;
+  height:390px;
+  width:250px;
+}
+button {
+  border:none;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:24px;
+  margin:5px;
+  height:50px;
+  width:50px;
+}
+button:hover{
+  opacity:0.9;
+}
+button:active {
+  transform:scale(0.98);
+}
+button:focus{
+  outline:none;
+}
+
+button.big-v{
+  height:110px;
+  border-radius:50px;
+}
+
+button.big-h{
+  width:110px;
+  border-radius:50px;
+}
+
+.display {
+  background-color:#0652DD;
+  color:#fff;
+  font-size:36px;
+  position:relative;
+  padding:20px 10px;
+  text-align:right;
+  height:70px; 
+  width: 100%;
+}
+.nums-container{
+  width:75%;
+}
+.ops-container{
+  width:25%;
+}
+
+button.orange {
+  background-color:#EE9406;
+  color:#fff;
+}
+button.dark-grey {
+  background-color:#3742fa;
+  color:#fff;
+}
+button.light-grey {
+  background-color:#A5A5A5;
+}
+button.ac{
+  margin-right:50%;
+}
+#build{
+  font-family: 'Pacifico', cursive;
+  position:fixed;
+  color:#130f40;
+  font-size:20px;
+  padding:15px 10px;
+  margin-left:-260px;
+  margin-top:230px;
+}
